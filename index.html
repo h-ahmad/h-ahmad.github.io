@@ -1,276 +1,467 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-</style>
-<body class="w3-theme-l5">
+	<head>
+		<title>Strata by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-  <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account"><img src="/w3images/avatar2.png" class="w3-circle" style="height:25px;width:25px" alt="Avatar"></a>
- </div>
-</div>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>I am Strata</strong>, a super simple<br />
+					responsive site template freebie<br />
+					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+				</div>
+			</header>
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-</div>
+		<!-- Main -->
+			<div id="main">
 
-<!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
-  <!-- The Grid -->
-  <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m3">
-      <!-- Profile -->
-      <div class="w3-card-2 w3-round w3-white">
-        <div class="w3-container">
-         <h4 class="w3-center">My Profile</h4>
-         <p class="w3-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-         <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
-        </div>
-      </div>
-      <br>
-      
-      <!-- Accordion -->
-      <div class="w3-card-2 w3-round">
-        <div class="w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
-          <div id="Demo1" class="w3-hide w3-container">
-            <p>Some text..</p>
-          </div>
-          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
-          <div id="Demo2" class="w3-hide w3-container">
-            <p>Some other text..</p>
-          </div>
-          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
-          <div id="Demo3" class="w3-hide w3-container">
-         <div class="w3-row-padding">
-         <br>
-           <div class="w3-half">
-             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/fjords.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-         </div>
-          </div>
-        </div>      
-      </div>
-      <br>
-      
-      <!-- Interests --> 
-      <div class="w3-card-2 w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p>Interests</p>
-          <p>
-            <span class="w3-tag w3-small w3-theme-d5">News</span>
-            <span class="w3-tag w3-small w3-theme-d4">W3Schools</span>
-            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
-            <span class="w3-tag w3-small w3-theme-d2">Games</span>
-            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
-            <span class="w3-tag w3-small w3-theme">Games</span>
-            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
-            <span class="w3-tag w3-small w3-theme-l2">Food</span>
-            <span class="w3-tag w3-small w3-theme-l3">Design</span>
-            <span class="w3-tag w3-small w3-theme-l4">Art</span>
-            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
-          </p>
-        </div>
-      </div>
-      <br>
-      
-      <!-- Alert Box -->
-      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-          <i class="fa fa-remove"></i>
-        </span>
-        <p><strong>Hey!</strong></p>
-        <p>People are looking at your profile. Find out who.</p>
-      </div>
-    
-    <!-- End Left Column -->
-    </div>
-    
-    <!-- Middle Column -->
-    <div class="w3-col m7">
-    
-      <div class="w3-row-padding">
-        <div class="w3-col m12">
-          <div class="w3-card-2 w3-round w3-white">
-            <div class="w3-container w3-padding">
-              <h6 class="w3-opacity">Social Media template by w3.css</h6>
-              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
-              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">1 min</span>
-        <h4>John Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half">
-              <img src="/w3images/lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-            </div>
-            <div class="w3-half">
-              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
-          </div>
-        </div>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-      </div>
-      
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">16 min</span>
-        <h4>Jane Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-      </div>  
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Ipsum lorem dolor aliquam ante commodo<br />
+							magna sed accumsan arcu neque.</h2>
+						</header>
+						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul>
+					</section>
 
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">32 min</span>
-        <h4>Angie Jane</h4><br>
-        <hr class="w3-clear">
-        <p>Have you seen this?</p>
-        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-      </div> 
-      
-    <!-- End Middle Column -->
-    </div>
-    
-    <!-- Right Column -->
-    <div class="w3-col m2">
-      <div class="w3-card-2 w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Upcoming Events:</p>
-          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-          <p><strong>Holiday</strong></p>
-          <p>Friday 15:00</p>
-          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-        </div>
-      </div>
-      <br>
-      
-      <div class="w3-card-2 w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Friend Request</p>
-          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-          <span>Jane Doe</span>
-          <div class="w3-row w3-opacity">
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-            </div>
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      
-      <div class="w3-card-2 w3-round w3-white w3-padding-16 w3-center">
-        <p>ADS</p>
-      </div>
-      <br>
-      
-      <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i></p>
-      </div>
-      
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-<!-- End Page Container -->
-</div>
-<br>
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Magna sed consequat tempus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Ultricies lacinia interdum</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Tortor metus commodo</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Quam neque phasellus</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Nunc enim commodo aliquet</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>Risus ornare lacinia</h3>
+								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>
+					</section>
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>Footer</h5>
-</footer>
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="post" action="#">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										1234 Somewhere Rd.<br />
+										Nashville, TN 00000<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="#">hello@untitled.tld</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
 
-<footer class="w3-container w3-theme-d5">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
- 
-<script>
-// Accordion
-function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme-d1";
-    } else { 
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className = 
-        x.previousElementSibling.className.replace(" w3-theme-d1", "");
-    }
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
 }
 
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
 
-</body>
-</html> 
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="6u 12u$(xsmall)">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button special">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button special">Special</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button big">Big</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button special fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button special fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button special icon fa-download">Icon</a></li>
+								<li><a href="#" class="button icon fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button special disabled">Special</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="4u$ 12u(small)">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="12u$">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row 50% uniform">
+									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
