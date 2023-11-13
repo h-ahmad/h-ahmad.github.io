@@ -1,1 +1,109 @@
-
+.pub-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+div {
+    display: block;
+}
+.pub-item {
+    position: relative;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.pub-item.with-thumb.large .elem-wrapper {
+    width: 85px;
+}
+.pub-item .elem-wrapper {
+    float: left;
+}
+.pub-item.with-thumb img {
+    width: 100%;
+    height: auto;
+}
+.pub-item .pub-thumbnail {
+    border: 1px solid #979797;
+}
+.btn, .btn-group, .btn-group-vertical, .caret, .checkbox-inline, .radio-inline, img {
+    vertical-align: middle;
+}
+.pub-item.with-thumb.large .content-wrapper {
+    margin-left: 102px;
+}
+.pub-item .content-wrapper {
+    position: relative;
+}
+.pub-item .title {
+    font-size: 14px;
+    color: #636363;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-weight: 700;
+}
+.pub-item .title a {
+    color: #636363;
+}
+.pub-item .description {
+    font-size: 12px;
+}
+.pub-item .description .citation {
+    margin-bottom: 20px;
+}
+.pub-item .description .citation, .pub-item .description .citation a {
+    font-style: italic;
+    color: #9d9d9d;
+    max-width: 70%;
+}
+.pub-item .title a {
+    color: #636363;
+}
+.page-contents *:last-child, #footer *:last-child {
+    margin-bottom: 0 !important;
+}
+.pub-item .description .citation a {
+}
+.pub-item .description .citation, .pub-item .description .citation a {
+    font-style: italic;
+    color: #9d9d9d;
+    max-width: 70%;
+}
+a {
+    color: #505050;
+    text-decoration: none;
+	background-color: transparent;
+}
+a:hover{
+    text-decoration: none;
+}
+.page-contents *:last-child, #footer *:last-child {
+    margin-bottom: 0 !important;
+}
+.link-with-icon i {
+    margin-right: 10px;
+}
+.link-with-icon i {
+    margin-right: 10px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.block-elem {
+    display: block;
+}
+.pub-item .description .citation, .pub-item .description .citation a {
+    font-style: italic;
+    color: #9d9d9d;
+    max-width: 70%;
+}
+.pub-item .description {
+    font-size: 12px;
+}
+.fa-external-link:before {
+    content: "\f08e";
+}
